@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '7.jpg', category: 'nature', caption: 'Beautiful Nature' },
         { src: '17.jpg', category: 'tech', caption: 'Pucha sir' },
         { src: '6.jpeg', category: 'tech', caption: 'Anathor cat' },
-        { src: '19.jpg', category: 'nature', caption: 'Modern Sculpture' },
+        { src: '23.jpg', category: 'nature', caption: 'Modern Sculpture' },
         { src: '12.jpg', category: 'art', caption: 'Sonata' },
         { src: '20.jpg', category: 'art', caption: 'Beautiful Nature' },
         { src: '21.jpg', category: 'art', caption: 'Beautiful Nature' },
@@ -379,4 +379,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         logo.style.setProperty('--before-width', '100%');
     }, 1000);
+
 });
