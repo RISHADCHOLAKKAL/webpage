@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="toggle-theme" class="toggle-checkbox">
+        <label for="toggle-theme" class="toggle-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+             <img class ="w" src=1.png alt="logo" width="50" height="50">
+            <div class="logo" data-text="Portfolio">Portfolio</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title"><br>Hi, I'm <span class="highlight">Creative Developer</span> and <span class="highlight">photographer</span></h1>
+                <p class="hero-subtitle">Building digital experiences that inspire and engage</p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                    <a href="#projects" class="btn btn-secondary">My Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src=2.png alt="Profile" class="profile-img">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">My <span class="highlight">Gallery</span></h2>
+            <p class="section-subtitle">A collection of my favorite images and creations</p>
+            
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="art">Flowers</button>
+                <button class="filter-btn" data-filter="tech">Pets</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Images will be loaded dynamically via JS -->
+            </div>
+            
+            <div class="gallery-modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div class="modal-caption"></div>
+            </div>
+        </section>
+
+      <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+    <p class="section-subtitle">Some of my recent work and creations</p>
+    
+    <div class="projects-grid">
+        <!-- Project 1: Calculator -->
+        <div class="project-card" data-project="calculator">
+            <div class="project-image">
+                <img src=25.png alt="Calculator Project">
+                <div class="project-overlay">
+                    <h3>Normal Calculator</h3>
+                    <p>A feature-rich calculator without scientific functions</p>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Normal Calculator</h3>
+                <p>A responsive calculator with basic and without scientific functions, history tracking, and theme support.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href=calculater.html class="btn btn-primary project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project 2: Image Encryption -->
+        <div class="project-card" data-project="encryption">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Image Encryption">
+                <div class="project-overlay">
+                    <h3>Image Encryption</h3>
+                    <p>Secure your images with advanced encryption</p>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Image Encryption Tool</h3>
+                <p>A secure application that encrypts and decrypts images using advanced algorithms to protect your privacy.</p>
+                <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <a href="image_enc.html" class="btn btn-primary project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 3: Image Encryption -->
+        <div class="project-card" data-project="encryption">
+            <div class="project-image">
+                <img src="27.jpg">
+                <div class="project-overlay">
+                    <h3>Hacking interface</h3>
+                    <p>just you can see a hacking interface</p>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Hacking interface</h3>
+                <p>just a experiance for a hacking interface or a fake haking interface.</p>
+                <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <a href="HACK.html" class="btn btn-primary project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project 4: Sudoku -->
+        <div class="project-card" data-project="sudoku">
+            <div class="project-image">
+                <img src=28.jpg alt="Sudoku Game">
+                <div class="project-overlay">
+                    <h3>Sudoku Master</h3>
+                    <p>Challenge your mind with this interactive game</p>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Sudoku Master</h3>
+                <p>An interactive Sudoku game without multiple difficulty levels, hints, and a timer to track your progress.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>CSS Grid</span>
+                </div>
+                <a href="sudoku.html" class="btn btn-primary project-link">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2 class="st">About <span class="highlight">Me</span></h2>
+                <p class="sst">Get to know me better</p>
+                
+                <div class="about-text">
+                    <p>I'm a passionate developer and designer with a love for creating beautiful, functional digital experiences. My journey in tech started several years ago, and since then I've been constantly learning and expanding my skills.</p>
+                    <p>When I'm not coding, you can find me taking photographs, solving puzzles, or exploring new technologies. I believe in the power of technology to solve problems and create meaningful connections.</p>
+                </div>
+                
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill" data-skill="HTML/CSS">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="JavaScript">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="UI/UX Design">
+                            <div class="skill-name">Photography</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 97%"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-skill="React">
+                            <div class="skill-name">C Programing</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-container">
+                    <img src=3.png alt="About Me">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle">I'd love to hear from you</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>rishadcholakkalsby@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 994704**02</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Wayanad, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Portfolio</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RISHADCHOLAKKAL All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
